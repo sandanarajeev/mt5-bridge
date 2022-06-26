@@ -1,9 +1,9 @@
 from flask import Flask, request
-# import MetaTrader5 as mt5
+import MetaTrader5 as mt5
 api = Flask(__name__)
 
 
-@api.route('/test', methods=['GET'])
+@api.route('/mt5', methods=['GET'])
 def testMethod():
     return {"message": "success"}, 200
 

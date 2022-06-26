@@ -54,7 +54,7 @@ To call mt5.initialize()
 
 ```
 {
-    "methodName": "initialize",
+    "methodName": "initialize"
 }
 ```
 
