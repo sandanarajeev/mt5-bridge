@@ -3,6 +3,11 @@ import MetaTrader5 as mt5
 api = Flask(__name__)
 
 
+@api.route('/test', methods=['GET'])
+def callMethods():
+    return {"message": "success"}, 200
+
+
 @api.route('/mt5', methods=['POST'])
 def callMethods():
     try:
@@ -40,4 +45,4 @@ def callMethods():
 
 
 if __name__ == '__main__':
-    api.run(port=5001)
+    api.run(host="0.0.0.0", port=5001)
